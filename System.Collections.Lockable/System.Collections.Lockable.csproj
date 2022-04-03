@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net48;net472;net461</TargetFrameworks>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>nexn.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">True</GeneratePackageOnBuild>
+    <Authors>Markus Wackermann</Authors>
+    <Company>neXn-Systems</Company>
+    <Description>Write-lockable collections, like List&lt;T&gt;, LinkedList&lt;T&gt;, etc.
+Lock a collection with a simple lock or HMAC SHA512.</Description>
+    <Copyright>2022 © Markus Wackermann</Copyright>
+    <PackageProjectUrl>https://github.com/spreedated/system.collections.lockable</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/spreedated/system.collections.lockable</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>collection lockable lock writelock </PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Assets\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
